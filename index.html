@@ -1,302 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <style>
-    *,*::before,*::after {
-  box-sizing:border-box
-}
-body {
-  position:fixed;
-  width:100%;
-  height:100%;
-  background:#4cc5f4;
-  overflow:hidden
-}
-.tekst {
-  color:#505050;
-  margin:0;
-  padding:0;
-  font-family:'Lato',arial,sans-serif;
-  text-transform:uppercase;
-  font-size:14px;
-  line-height:28px;
-  font-weight:bold;
-  display:block;
-  letter-spacing:2px;
-  max-width:100%;
-  text-align:center;
-  position:absolute;
-  bottom:20px;
-  left:30px;
-  z-index:1
-}
-a {
-  color:#fefefe;
-  text-decoration:none;
-  cursor:pointer
-}
-a:hover {
-  text-decoration:underline
-}
-.pozycja {
-  position:absolute;
-  top:50%;
-  left:50%;
-  height:100%;
-  -webkit-transform:translate(-50%,-111px);
-  -moz-transform:translate(-50%,-111px);
-  -ms-transform:translate(-50%,-111px);
-  -o-transform:translate(-50%,-111px);
-  transform:translate(-50%,-111px)
-}
-.ludek {
-  position:relative;
-  width:200px;
-  height:100%
-}
-.ludek .cialo,.skora {
-  position:absolute;
-  width:100%;
-  height:105%;
-  top:0;
-  left:0;
-  background:#191919;
-  border-radius:200px 200px 0 0;
-  -webkit-transform:rotate(0deg);
-  -moz-transform:rotate(0deg);
-  -ms-transform:rotate(0deg);
-  -o-transform:rotate(0deg);
-  -webkit-transform-origin:bottom center;
-  -moz-transform-origin:bottom center;
-  -ms-transform-origin:bottom center;
-  -o-transform-origin:bottom center;
-  transform-origin:bottom center
-}
-.ludek .skora {
-  overflow:hidden
-}
-.ludek .cialo .ucho {
-  position:absolute;
-  top:80px;
-  width:45px;
-  height:45px;
-  background:#191919;
-  border-radius:45px
-}
-.ludek .cialo .ucho.lewe {
-  left:-10%
-}
-.ludek .cialo .ucho.prawe {
-  right:-10%
-}
-.ludek .oko {
-  width:50px;
-  height:50px;
-  position:absolute;
-  top:85px;
-  background:#fefefe;
-  border-radius:50%;
-  z-index:1
-}
-.ludek .oko.lewe {
-  left:47px
-}
-.ludek .oko.prawe {
-  left:103px
-}
-.ludek .oko .zrenica {
-  width:15px;
-  height:15px;
-  position:absolute;
-  top:18px;
-  left:18px;
-  background:#191919;
-  border-radius:50%
-}
-.ludek .powieka_gorna {
-  width:70%;
-  height:30px;
-  position:absolute;
-  top:50px;
-  left:15%;
-  background:#191919;
-  border-radius:30px 30px 0 0;
-  z-index:3
-}
-.ludek .powieka_dolna {
-  width:70%;
-  height:30px;
-  position:absolute;
-  top:140px;
-  left:15%;
-  background:#191919;
-  border-radius:0 0 30px 30px;
-  z-index:3
-}
-.ludek .usta {
-  width:80%;
-  height:32px;
-  position:absolute;
-  top:145px;
-  left:10%;
-  background:#fefefe;
-  border-radius:32px;
-  z-index:4
-}
-
-  </style>
+<meta charset="gb2312"charset="UTF-8">
+<title>个人博客模板</title>
+<meta name="keywords" content="个人博客模板" />
+<meta name="description" content="个人博客模板" />
+<link href="css/styles.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
 </head>
 <body>
-  <div class="pozycja">
-    <div class="ludek">
-      <div class="cialo">
-        <div class="ucho lewe"></div>
-        <div class="ucho prawe"></div>
-        <div class="skora">
-          <div class="oko lewe"><span class="zrenica"></span></div>
-          <div class="oko prawe"><span class="zrenica"></span></div>
-          <div class="powieka_gorna"></div>
-          <div class="powieka_dolna"></div>
-          <div class="usta"></div>
-        </div>
+<header>
+ <nav id="nav">
+   <ul>
+    <li><a href="#">网站首页</a></li>
+    <li><a href="#">模板</a></li>
+    <li><a href="#">关于我们</a></li>
+    <li><a href="#">我们的故事</a></li>
+    <li><a href="#">我们的蜜月</a></li>
+    <li><a href="#">婚礼现场</a></li>
+    <li><a href="#">婚纱摄影</a></li>
+    <li><a href="#">我们的博客</a></li>
+    <li><a href="#">联系我们</a></li>
+   </ul>
+  <script src="js/silder.js"></script><!--获取当前页导航 高亮显示标题-->
+ </nav>
+ </header>
+ <div class="mainContent">
+    <aside>
+      <div class="avatar">
+        <a href="#"><span>青轻飞扬</span></a>
       </div>
+      <section class="topspaceinfo">
+        <h1>执子之手，与子偕老</h1>
+        <p>于千万人之中，我遇见了我所遇见的人....</p>
+      </section>
+      <div class="userinfo">
+        <p class="q-fans"> 粉丝：<a href="#">167</a></p>
+        <p class="btns"><a href="#" >私信</a><a href="#">相册</a><a href="#">存档</a></p>
+      </div>
+      <section class="newpic">
+         <h2>最新照片</h2>
+         <ul>
+           <li><a href="#"><img src="images/01.jpg"></a></li>
+           <li><a href="#"><img src="images/02.jpg"></a></li>
+           <li><a href="#"><img src="images/03.jpg"></a></li>
+           <li><a href="#"><img src="images/04.jpg"></a></li>
+           <li><a href="#"><img src="images/05.jpg"></a></li>
+           <li><a href="#"><img src="images/06.jpg"></a></li>
+           <li><a href="#"><img src="images/07.jpg"></a></li>
+           <li><a href="#"><img src="images/08.jpg"></a></li>
+         </ul>
+      </section>
+      <section class="taglist">
+         <h2>全部标签</h2>
+         <ul>
+           <li><a href="#">青空</a></li>
+           <li><a href="#">情感聊吧</a></li>
+           <li><a href="#">study</a></li>
+           <li><a href="#">青青唠叨</a></li>
+        </ul>
+      </section>
+    </aside>
+    <div class="blogitem">
+      <article>
+        <h2 class="title"><a href="#">陌上花开，可缓缓归矣</a></h2>
+        <ul class="text">
+          <p>“陌上花开，可缓缓归矣。” 含义：（夫人），田间阡陌上的花开了，你可以一边赏花，一边慢慢地回来。</p>
+          <p>“陌上花开，如果没有悄然伫立阡陌并为陌上风情所陶醉的人，那么花开也寂寞，风情也苍白....”喜欢这句话，是因为看了忍冬的作品《陌上花开缓缓归》</p>
+          <p>阳春三月，风和日暖，信步城外，看阡陌之上的杨柳依依，野花绚烂，身心不由得轻爽而浪漫。“三月风情陌上花”，古远的诗句似乎随风从天边飘来，从历史的深处飘来，拂过阡陌，袭上心头，诗是属于清乾嘉诗人赵翼的，可昂首远望，眼前的陌上风情却是不折不扣的现代，由眼帘入心扉。</p>
+          <p class="textimg"><img src="images/text02.jpg"></p>
+          <p>漫步陌上，心情是诗意的那种，优雅而散淡，不惹匆促，只因陌上花开；花是自然的那种，朴素而恬淡，不落尘俗。“三月风情陌上花”，是花在其中生命得以璀璨，人在其中心情得以畅然的一种意境。三月陌上花，让人爱让人痴，恍惚人的骨子里头都沉淀了花的影子，花的风韵。</p>
+          <p>陌上花开，如果没有了从俗累的生活中走出来，悄然伫立阡陌并为陌上风情所陶醉的人，那么花开也寂寞，风情也苍白。于是，一句“陌上花开，可缓缓归矣”不知被多少人吟诵了多少遍。人归缓缓，那花便有灵性，便开得执著，陌上风情也被撩拨得浓郁而热烈。</p>
+          <p>缓缓归，缓缓归，披一袭“三月风情”，再采一束“陌上花”，缓缓归。</p>
+          <p>缓缓归矣，我心已是陌上花开。</p>
+        </ul>
+        <div class="textfoot">
+          <a href="#">阅读全文</a><a href="#">评论</a><a href="#">转载</a>
+        </div>
+      </article>
+      <article>
+        <h2 class="title"><a href="#">岁月留痕——我的2010</a></h2>
+        <ul class="text">
+          <p>A面——岁月留痕之时光</p>
+          <p>每逢新旧年交替时候，我就被笼罩在一股茫然的思绪里，逃也逃不脱，避也避不开，唯有让心事在静静流逝的时光里苍茫成河。</p>
+          <p>是从什么时候开始的呢，我又变得如此感时伤怀？我很羡慕那些在年终盘点总结的人们，过去的一年于他们来说，是大刀阔斧的一年，是硕果累累的一年。再不济的话，也是豪情万丈的一年。而在我那逝去的时光里，平静如水，不起一丝波澜，一年又一年。我没有盘点，因为我没有波澜壮阔；我不会去总结，因为我的总结从来就没有逼近我的心灵。我知道这于我来说，显得多么无厘头。</p>
+          <p class="textimg"><img src="images/text01.jpg"></p>
+          <p>我喜欢这样安静地坐下来，想一些似有若无的心事。尽量不去想那些飞逝的时光，尽量不去想那些形色匆忙的脚步，似乎是在害怕，在这高速运转的时空里，自己有一天会化作一堆虚无。还记得那一部《岁月神偷》的电影吗？真是要感谢来自香港的导演罗启锐，影片给我们芸芸众生留下太多的唏嘘。在如水一般逝去的时光里，皱纹爬上你的眼角，白发蔓延我的双鬓。岁月才是最好的神偷，偷走了我的青春和你的美好。</p>
+          <p>就任这时光慢慢流淌吧，对于大多数人来说，我们无非就是浩瀚时空的一些微尘。虎年走了又怎样</p>
+        </ul>
+        <div class="textfoot">
+          <a href="#">阅读全文</a><a href="#">评论</a><a href="#">转载</a>
+        </div>
+      </article>
+      <div class="pages"><span>1</span><a href="#" hidefocus="">2</a><a href="#" hidefocus="">3</a><a href="#" class="next">下一页&gt;&gt;</a></div>
     </div>
-  </div>
+ </div>
+<footer>
+   <div class="footavatar">
+     <img src="images/photo.jpg" class="footphoto">
+     <ul class="footinfo">
+       <p class="fname"><a href="/dancesmile" >青轻飞扬</a>  </p>
+       <p class="finfo">性别：女 年龄：25岁</p>
+       <p>现居：四川成都</p></ul>
+   </div>
+   <section class="visitor">
+     <h2>最近访客</h2>
+      <ul>
+        <li><a href="#"><img src="images/s0.jpg"></a></li>
+        <li><a href="#"><img src="images/s1.jpg"></a></li>
+        <li><a href="#"><img src="images/s2.jpg"></a></li>
+        <li><a href="#"><img src="images/s3.jpg"></a></li>
+        <li><a href="#"><img src="images/s5.jpg"></a></li>
+        <li><a href="#"><img src="images/s6.jpg"></a></li>
+        <li><a href="#"><img src="images/s7.jpg"></a></li>
+        <li><a href="#"><img src="images/s8.jpg"></a></li>
+      </ul>
+   </section>
+   <div class="Copyright">
+     <ul>
+       <a href="#">帮助中心</a><a href="#">空间客服</a><a href="#">投诉中心</a><a href="#">空间协议</a>
+     </ul>
+     <p>Design by DanceSmile</p>
+   </div>
+ </footer>
 </body>
 </html>
-<script src="./jquery.js"></script>
-<script>
-  $(function() {
-    var tarcie = (1 / 6);
-    var cialo_x = 0,
-        cialoRuchX = 0,
-        uszy_x = 0,
-        uszy_y = 0,
-        uszyRuchX = 0,
-        uszyRuchY = 0,
-        zrenica_x = 0,
-        zrenica_y = 0,
-        zrenicaRuchX = 0,
-        zrenicaRuchY = 0,
-        oko_x = 0,
-        oko_y = 0,
-        okoRuchX = 0,
-        okoRuchY = 0,
-        powieka_gorna_x = 0,
-        powieka_gorna_y = 0,
-        powiekaGornaRuchX = 0,
-        powiekaGornaRuchY = 0,
-        powieka_dolna_x = 0,
-        powieka_dolna_y = 0,
-        powiekaDolnaRuchX = 0,
-        powiekaDolnaRuchY = 0,
-        usta_x = 0,
-        usta_y = 0,
-        ustaRuchX = 0,
-        ustaRuchY = 0;
-
-    function animacja() {
-        cialo_x += (cialoRuchX - cialo_x) * tarcie;
-        $('.cialo').css({
-            '-webkit-transform': 'rotate(' + -cialo_x + 'deg)',
-            'transform': 'rotate(' + -cialo_x + 'deg)'
-        });
-        uszy_x += (uszyRuchX - uszy_x) * tarcie;
-        uszy_y += (uszyRuchY - uszy_y) * tarcie;
-        if (uszy_x < 0) {
-            $('.ucho.lewe').css({
-                '-webkit-transform': 'translate(' + -uszy_x * 7 + 'px, ' + -uszy_y + 'px)',
-                'transform': 'translate(' + -uszy_x * 7 + 'px, ' + -uszy_y + 'px)'
-            });
-            $('.ucho.prawe').css({
-                '-webkit-transform': 'translate(' + -uszy_x + 'px, ' + -uszy_y + 'px)',
-                'transform': 'translate(' + -uszy_x + 'px, ' + -uszy_y + 'px)'
-            });
-        } else {
-            $('.ucho.lewe').css({
-                '-webkit-transform': 'translate(' + -uszy_x + 'px, ' + -uszy_y + 'px)',
-                'transform': 'translate(' + -uszy_x + 'px, ' + -uszy_y + 'px)'
-            });
-            $('.ucho.prawe').css({
-                '-webkit-transform': 'translate(' + -uszy_x * 7 + 'px, ' + -uszy_y + 'px)',
-                'transform': 'translate(' + -uszy_x * 7 + 'px, ' + -uszy_y + 'px)'
-            });
-        }
-        zrenica_x += (zrenicaRuchX - zrenica_x) * (tarcie * 3);
-        zrenica_y += (zrenicaRuchY - zrenica_y) * (tarcie * 3);
-        $('.zrenica').css({
-            '-webkit-transform': 'translate(' + -zrenica_x + 'px, ' + -zrenica_y + 'px)',
-            'transform': 'translate(' + -zrenica_x + 'px, ' + -zrenica_y + 'px)'
-        });
-        oko_x += (okoRuchX - oko_x) * tarcie;
-        oko_y += (okoRuchY - oko_y) * tarcie;
-        if (oko_x < 0) {
-            $('.oko.lewe').css({
-                'z-index': '2',
-                '-webkit-transform': 'translate(' + -oko_x * 2 + 'px, ' + -oko_y + 'px)',
-                'transform': 'translate(' + -oko_x * 2 + 'px, ' + -oko_y + 'px)'
-            });
-            $('.oko.prawe').css({
-                'z-index': '1',
-                '-webkit-transform': 'translate(' + -oko_x + 'px, ' + -oko_y + 'px)',
-                'transform': 'translate(' + -oko_x + 'px, ' + -oko_y + 'px)'
-            });
-        } else {
-            $('.oko.prawe').css({
-                'z-index': '2',
-                '-webkit-transform': 'translate(' + -oko_x * 2 + 'px, ' + -oko_y + 'px)',
-                'transform': 'translate(' + -oko_x * 2 + 'px, ' + -oko_y + 'px)'
-            });
-            $('.oko.lewe').css({
-                'z-index': '1',
-                '-webkit-transform': 'translate(' + -oko_x + 'px, ' + -oko_y + 'px)',
-                'transform': 'translate(' + -oko_x + 'px, ' + -oko_y + 'px)'
-            });
-        }
-        powieka_gorna_x += (powiekaGornaRuchX - powieka_gorna_x) * tarcie;
-        powieka_gorna_y += (powiekaGornaRuchY - powieka_gorna_y) * tarcie;
-        $('.powieka_gorna').css({
-            '-webkit-transform': 'translate(' + -powieka_gorna_x + 'px, ' + -powieka_gorna_y + 'px)',
-            'transform': 'translate(' + -powieka_gorna_x + 'px, ' + -powieka_gorna_y + 'px)'
-        });
-        powieka_dolna_x += (powiekaDolnaRuchX - powieka_dolna_x) * tarcie;
-        powieka_dolna_y += (powiekaDolnaRuchY - powieka_dolna_y) * tarcie;
-        $('.powieka_dolna').css({
-            '-webkit-transform': 'translate(' + -powieka_dolna_x + 'px, ' + -powieka_dolna_y + 'px)',
-            'transform': 'translate(' + -powieka_dolna_x + 'px, ' + -powieka_dolna_y + 'px)'
-        });
-        usta_x += (ustaRuchX - usta_x) * tarcie;
-        usta_y += (ustaRuchY - usta_y) * tarcie;
-        $('.usta').css({
-            '-webkit-transform': 'translate(' + -usta_x + 'px, ' + -usta_y + 'px)',
-            'transform': 'translate(' + -usta_x + 'px, ' + -usta_y + 'px)'
-        });
-        window.requestAnimationFrame(animacja);
-    }
-    $(window).on('mousemove click', function(e) {
-        var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
-        var lMouseY = Math.max(-100, Math.min(100, ($(window).height() / 2) - e.clientY));
-        cialoRuchX = (5 * lMouseX) / 200;
-        uszyRuchX = (3 * -lMouseX) / 100;
-        uszyRuchY = (10 * -lMouseY) / 100;
-        zrenicaRuchX = (25 * lMouseX) / 200;
-        zrenicaRuchY = (13 * lMouseY) / 100;
-        okoRuchX = (20 * lMouseX) / 100;
-        if (lMouseY <= 0) {
-            okoRuchY = (10 * lMouseY) / 100;
-            powiekaDolnaRuchY = (25 * lMouseY) / 100;
-        } else {
-            okoRuchY = (30 * lMouseY) / 100;
-            powiekaDolnaRuchY = (55 * lMouseY) / 100;
-        }
-        powiekaGornaRuchX = (25 * lMouseX) / 100;
-        powiekaGornaRuchY = (35 * lMouseY) / 100;
-        powiekaDolnaRuchX = (25 * lMouseX) / 100;
-        ustaRuchX = (35 * lMouseX) / 100;
-        ustaRuchY = (10 * lMouseY) / 100;
-    });
-    animacja();
-});
-</script>
